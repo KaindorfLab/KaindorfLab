@@ -29,12 +29,10 @@ Schulserver auf Proxmox für alle IT-Klassen der HTBLA Kaindorf. Jeder Schüler 
 - Zurücksetzen auf den Ausgangszustand per Snapshot, eigene Snapshots möglich
 ### Isolation und Schutz vor Missbrauch
 - Schüler sehen und bedienen nur den eigenen Container
-- Klassen sind im Netzwerk voneinander getrennt
-- Kein Zugriff auf das Schulnetz und die Proxmox-Verwaltung
+- Kein Zugriff auf die Proxmox-Verwaltung
 - Limits für CPU, RAM, Speicher und Netzwerk pro Container
-- Ausgehender Traffic wird begrenzt und protokolliert
-- Eigener abgesicherter Bereich zum Üben von Cybersecurity
-- Nutzungsordnung mit klaren Regeln, die jeder Schüler bestätigt
+- Ausgehender Traffic wird begrenzt und / oder protokolliert
+- (optional) Nutzungsordnung mit klaren Regeln, die jeder Schüler bestätigt
 ### Admin-Dashboard
 - Übersicht aller Klassen und Container mit Status (läuft / gestoppt)
 - Anzeige der laufenden Services pro Container (Name, Port, Status)
@@ -43,5 +41,4 @@ Schulserver auf Proxmox für alle IT-Klassen der HTBLA Kaindorf. Jeder Schüler 
 Jeder Container meldet seine Services über einen kleinen Agenten automatisch an eine zentrale API, die das Dashboard mit Daten versorgt.
  
 ### Betrieb
-- Automatische Backups und Wiederherstellung einzelner Container
 - Warnungen bei Speicherplatzmangel oder Serverausfall
